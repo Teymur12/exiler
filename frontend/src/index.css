@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-hidden {
+  overflow: auto;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.messages {
+  height: calc(100vh - 100px)
+}
+
+@layer base {
+
+  html,
+  body,
+  #root {
+    @apply h-full
+  }
+}
